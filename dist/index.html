@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100;300;400;500;900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" href="./favicon.png">
+  <title>Battleship game</title>
+</head>
+
+<body>
+  <h1 class="heading">Battleship</h1>
+  <div class="game">
+    <div class="gameboard js-gameboard js-player-gameboard is-visible">
+      <div class="gameboard__coordinates gameboard__coordinates--letters">
+        <span class="gameboard__coordinate">A</span>
+        <span class="gameboard__coordinate">B</span>
+        <span class="gameboard__coordinate">C</span>
+        <span class="gameboard__coordinate">D</span>
+        <span class="gameboard__coordinate">E</span>
+        <span class="gameboard__coordinate">F</span>
+        <span class="gameboard__coordinate">G</span>
+        <span class="gameboard__coordinate">H</span>
+        <span class="gameboard__coordinate">I</span>
+        <span class="gameboard__coordinate">J</span>
+      </div>
+      <div class="gameboard__coordinates gameboard__coordinates--numbers">
+        <span class="gameboard__coordinate">1</span>
+        <span class="gameboard__coordinate">2</span>
+        <span class="gameboard__coordinate">3</span>
+        <span class="gameboard__coordinate">4</span>
+        <span class="gameboard__coordinate">5</span>
+        <span class="gameboard__coordinate">6</span>
+        <span class="gameboard__coordinate">7</span>
+        <span class="gameboard__coordinate">8</span>
+        <span class="gameboard__coordinate">9</span>
+        <span class="gameboard__coordinate">10</span>
+      </div>
+      <div class="gameboard__battlefield js-player-battlefield"></div>
+
+      <!-- The buttons are not clickable once they are hidden. The event listeners are removed -->
+      <button class="gameboard__btn gameboard__btn--random js-random is-visible">Shuffle</button>
+      <button class="gameboard__btn gameboard__btn--start js-start is-visible">
+        Fight!
+      </button>
+      <div class="gameboard__description gameboard__description--player js-description">
+        Your board
+      </div>
+    </div>
+    <div class="gameboard js-gameboard js-computer-gameboard">
+      <div class="gameboard__coordinates gameboard__coordinates--letters">
+        <span class="gameboard__coordinate">A</span>
+        <span class="gameboard__coordinate">B</span>
+        <span class="gameboard__coordinate">C</span>
+        <span class="gameboard__coordinate">D</span>
+        <span class="gameboard__coordinate">E</span>
+        <span class="gameboard__coordinate">F</span>
+        <span class="gameboard__coordinate">G</span>
+        <span class="gameboard__coordinate">H</span>
+        <span class="gameboard__coordinate">I</span>
+        <span class="gameboard__coordinate">J</span>
+      </div>
+      <div class="gameboard__coordinates gameboard__coordinates--numbers">
+        <span class="gameboard__coordinate">1</span>
+        <span class="gameboard__coordinate">2</span>
+        <span class="gameboard__coordinate">3</span>
+        <span class="gameboard__coordinate">4</span>
+        <span class="gameboard__coordinate">5</span>
+        <span class="gameboard__coordinate">6</span>
+        <span class="gameboard__coordinate">7</span>
+        <span class="gameboard__coordinate">8</span>
+        <span class="gameboard__coordinate">9</span>
+        <span class="gameboard__coordinate">10</span>
+      </div>
+      <div class="gameboard__coordinates"></div>
+      <div class="gameboard__coordinates"></div>
+      <div class="gameboard__battlefield js-computer-battlefield"></div>
+      <div class="gameboard__description gameboard__description--computer js-description">
+        Computer's board
+      </div>
+    </div>
+    <div class="container--result js-container--result">
+      <div class="result">
+        <span class="result__message js-result"></span>
+        <button class="result__btn js-restart">Restart</button>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="footer__text">Made with love by<a class="footer__link" target="_blank" rel="noreferrer"
+        href="https://github.com/twentysixhugs">
+        Iaan Lamanosau</a></div>
+    <a class="footer__link" target="_blank" rel="noreferrer" href="https://github.com/twentysixhugs/Battleship">View
+      code</a>
+  </footer>
+  <script src="./main.js"></script>
+</body>
+
+</html>
